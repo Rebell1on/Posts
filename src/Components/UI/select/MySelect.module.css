@@ -1,0 +1,49 @@
+.mySelect {
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 5px 0px;
+  font-family: 'Press Start 2P';
+  box-shadow: 4px 4px 4px;
+  background-color: lightseagreen;
+  cursor: pointer;
+  transition: all 1s;
+  margin: 10px 0px 10px 20px;
+  outline: none;
+}
+
+.mySelect:hover {
+  color: white;
+  background-color: navy;
+  box-shadow: 6px 6px 6px black;
+}
+
+.endlessScrollButton {
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 1.25rem;
+  padding: 5px 20px;
+  font-family: 'Press Start 2P';
+  box-shadow: 4px 4px 4px;
+  background-color: lightseagreen;
+  cursor: pointer;
+  transition: all 1s;
+  margin: 10px 0px 10px 20px;
+}
+
+.endlessScrollButton:hover {
+  background-color: navy;
+  box-shadow: 6px 6px 6px black;
+  color: white;
+}
+
+.used {
+  background-color: purple;
+  box-shadow: 4px 4px 4px black;
+  color: white;
+}
+
+.used:hover {
+  background-color: purple;
+  box-shadow: 6px 6px 6px black;
+}

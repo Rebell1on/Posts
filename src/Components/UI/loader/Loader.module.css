@@ -1,0 +1,57 @@
+.firstLoad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border: 5px dashed blue;
+  border-radius: 50%;
+  margin: 50% auto;
+  margin-top: 50px;
+  animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.secondLoad {
+  width: 150px;
+  height: 150px;
+  border: 3px dashed blue;
+  border-radius: 50%;
+  animation: rotated 1.5s infinite linear;
+}
+
+@keyframes rotated {
+  from {
+    transform: rotate(0deg) scale(0);
+  }
+
+  to {
+    transform: rotate(-360deg) scale(2);
+  }
+}
+
+.loading {
+  position: absolute;
+  top: 450px;
+  left: 730px;
+  animation: show 1.5s infinite linear;
+}
+
+@keyframes show {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

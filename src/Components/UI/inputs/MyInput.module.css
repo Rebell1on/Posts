@@ -1,0 +1,22 @@
+.myInput {
+  padding: 20px;
+  font-size: 1.5rem;
+  height: 30px;
+  width: 100%;
+  outline: none;
+  font-family: 'Caveat';
+  box-shadow: 4px 4px 2px;
+  margin: 10px 0px 10px 0px;
+}
+
+.myEdit {
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 2rem;
+  height: 150px;
+  width: 100%;
+  outline: none;
+  font-family: 'Caveat';
+  box-shadow: 4px 4px 2px;
+  margin: 10px 0px 10px 0px;
+}
