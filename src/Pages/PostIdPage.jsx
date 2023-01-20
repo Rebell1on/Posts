@@ -14,14 +14,13 @@ export default function PostIdPage() {
   const params = useParams()
 
   const [comments, setComments] = useState([])
-  const [post, setPost] = useState({ title: '', body: '' })
+  const [post, setPost] = useState({ title: '', body: '' }) //eslint-disable-next-line
   const [fetchingPostById, isLoading, error] = useFetch(async (id) => {
     const response = await PostService.getById(params.id)
     setPost(response.data)
   })
   const [clone, setClone] = useState({})
-  function acceptEdit() {}
-
+  //eslint-disable-next-line
   const [fetchingComment, loading, er] = useFetch(async (id) => {
     const response = await PostService.getComment(params.id)
     setComments(response.data)
@@ -43,7 +42,7 @@ export default function PostIdPage() {
 
   useEffect(() => {
     fetchingPostById(params.id)
-    fetchingComment(params.id)
+    fetchingComment(params.id) //eslint-disable-next-line
   }, [])
   return (
     <div>

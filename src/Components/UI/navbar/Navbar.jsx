@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { AuthContext } from '../../../context'
 import '../../../Styles/App.css'
 import cl from '../buttons/DeleteButton.module.css'

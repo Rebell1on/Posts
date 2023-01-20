@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import PostService from '../API Service/PostService'
 import { useEdit } from '../Hooks/useEdit'
 import { useFetch } from '../Hooks/useFetch'
@@ -13,7 +13,6 @@ import Postlist from '../Components/Postlist'
 import { useObserver } from '../Hooks/useObserver'
 import useLoadPages from '../Hooks/useLoadPages'
 import EditButtons from '../Components/EditButtons'
-import axios from 'axios'
 
 function Posts() {
   const [posts, setPosts] = useState([])
@@ -22,7 +21,7 @@ function Posts() {
   const [halfPage, setHalfPage] = useState(false)
   const [selectedSort, setSeceltedSort] = useState('')
   const [searchQuery, setSearchQuery] = useState('')
-  const [totalPages, setTotalPages] = useState(0)
+  const [totalPages, setTotalPages] = useState(0) //eslint-disable-next-line
   const [limit, setLimit] = useState(10)
   const [page, setPage] = useState(1)
   const [pageScroll, setPageScroll] = useState(1)
@@ -60,12 +59,6 @@ function Posts() {
     setPage(page)
   }
 
-  let user = {
-    id: 101,
-    title: 'New Post',
-    body: 'ETO MOI POST',
-  }
-
   return (
     <div className="App">
       <EditButtons setVisible={setVisible} removeAll={removeAll} createPost={createPost} visible={visible} />
@@ -90,6 +83,7 @@ function Posts() {
       <Postlist remove={deletePost} posts={sortedAndSearchPosts} />
       {isLoading && <Loader />}
       {error && <h1>Ошибка {error}</h1>}
+      {er && <h1>{er}</h1>}
       {halfPage ? (
         <CreateButton
           onClick={() => window.scrollTo(0, 0)}

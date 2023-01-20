@@ -11,7 +11,6 @@ export default function MySelect({
   cancelScroll,
   limit,
   page,
-  setPageScroll,
 }) {
   const btnClasses = [cl.endlessScrollButton]
 
@@ -37,6 +36,7 @@ export default function MySelect({
           )
         })}
       </select>
+
       <button className={btnClasses.join(' ')} onClick={() => setIsEndless(true)}>
         Динамическая пагинация
       </button>

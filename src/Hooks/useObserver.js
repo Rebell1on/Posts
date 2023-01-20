@@ -11,6 +11,6 @@ export const useObserver = (ref, canLoad, isLoading, callback, ...trigers) => {
       }
     }
     observer.current = new IntersectionObserver(cb)
-    observer.current.observe(ref.current)
+    observer.current.observe(ref.current) //eslint-disable-next-line
   }, [isLoading, ...trigers])
 }

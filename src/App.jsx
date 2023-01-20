@@ -8,7 +8,7 @@ import { AuthContext } from './context'
 
 function App() {
   const [isAuth, setIsAuth] = useState(false)
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true) //eslint-disable-next-line
   useEffect(() => {
     if (localStorage.getItem('auth')) {
       setIsAuth(true)
