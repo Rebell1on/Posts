@@ -58,7 +58,7 @@ export default function PostId(props) {
             Accept
           </CreateButton>
         )}
-        {props.isEditBody && <DeleteButton onClick={() => props.cancelEdit(props.etIsEditBody)}>Cancel</DeleteButton>}
+        {props.isEditBody && <DeleteButton onClick={() => props.cancelEdit(props.setIsEditBody)}>Cancel</DeleteButton>}
       </div>
     </>
   )
